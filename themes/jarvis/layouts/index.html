@@ -1,0 +1,132 @@
+{{ define "main" }}
+<!-- Banner -->
+<section class="banner">
+  <div class="content">
+      <div class="hero">
+        <img src="/images/kumshw.jpg" alt="" />
+        <div class="hero-intro">
+          <h1>{{ .Site.Params.fronttitle | safeHTML }} <br><span>{{ .Site.Params.frontname | safeHTML }}</span></h1>          
+        </div>
+        <p class="front-subline">{{ .Site.Params.frontsubline | safeHTML }}</p>
+      </div>
+    <p class="hero-description">{{ .Site.Params.frontintro | safeHTML }}</p>
+  </div>
+</section>
+
+<hr class="section-separator">
+
+<!-- Skills Section -->
+<section>
+  <div class="section-title">
+    <h2>{{ .Site.Params.showcase.title }}</h2>
+  </div>
+  <div class="section-content">
+    <article>
+      <div class="item">
+        <div class="section-headline">
+          <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+          <h3>{{ .Site.Params.showcase.headline1 }}</h3>
+        </div>
+        <p>{{ .Site.Params.showcase.intro1 }}</p>
+      </div>
+    </article>
+    <article>
+      <div class="item">
+        <div class="section-headline">
+          <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+          <h3>{{ .Site.Params.showcase.headline2 }}</h3>
+        </div>
+        <p>{{ .Site.Params.showcase.intro2 }}</p>
+      </div>
+    </article>
+    <article>
+      <div class="item">
+        <div class="section-headline">
+          <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+          <h3>{{ .Site.Params.showcase.headline3 }}</h3>
+        </div>
+        <p>{{ .Site.Params.showcase.intro3 }}</p>
+        </div>
+    </article>
+    <article>
+      <div class="item">
+        <div class="section-headline">
+          <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+          <h3>{{ .Site.Params.showcase.headline4 }}</h3>
+        </div>
+        <p>{{ .Site.Params.showcase.intro4 }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Project Section -->
+<section>
+    <div class="section-title">
+      <h2>{{ .Site.Params.projects.title }}</h2>
+    </div>
+    <div class="section-content">
+      <article>
+        <div class="item">
+          <div class="section-headline">
+            <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+            <h3>{{ .Site.Params.projects.headline1 }}</h3>
+          </div>
+          <p>{{ .Site.Params.projects.intro1 }}</p>
+          <div><a href="{{.Site.Params.projects.url1}}" class="button" data-v-e984cb6a="">Details</a></div>
+        </div>
+      </article>
+      <article>
+        <div class="item">
+          <div class="section-headline">
+            <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+            <h3>{{ .Site.Params.projects.headline2 }}</h3>
+          </div>
+          <p>{{ .Site.Params.projects.intro2 }}</p>
+          <div><a href="{{.Site.Params.projects.url2}}" class="button" data-v-e984cb6a="">Details</a></div>
+        </div>
+      </article>
+      <article>
+        <div class="item">
+          <div class="section-headline">
+            <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+            <h3>{{ .Site.Params.projects.headline3 }}</h3>
+          </div>
+          <p>{{ .Site.Params.projects.intro3 }}</p>
+          <div><a href="{{.Site.Params.projects.url3}}" class="button" data-v-e984cb6a="">Details</a></div>
+          </div>
+      </article>
+      <article>
+        <div class="item">
+          <div class="section-headline">
+            <img src="/images/site_logo_light.png" alt="" alt="" class="home-site-logo">
+            <h3>{{ .Site.Params.projects.headline4 }}</h3>
+          </div>
+          <p>{{ .Site.Params.projects.intro4 }}</p>
+          <div><a href="{{.Site.Params.projects.url4}}" class="button" data-v-e984cb6a="">Details</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Hobby Section -->
+<section>
+    <div class="section-title">
+      <h2>{{ .Site.Params.miniposts.title }}</h2>
+    </div>
+    <div class="section-content">
+      {{ range .Site.Params.miniposts.hobby }}
+      <article class="hobby-wrapper">
+        <div class="item ">
+          <div class="section-headline hobby">
+            <img src="{{.image}}" alt="" alt="" class="hobby-image">
+            <h3 style="display:block;">{{ .title }}</h3>
+          </div>
+          <p>{{ .description }}</p>
+          <div><a href="{{.Site.Params.projects.url1}}" class="button" data-v-e984cb6a="">Details</a></div>
+        </div>
+      </article>
+      {{end}}
+    </div>
+  </section>
+{{ end }}

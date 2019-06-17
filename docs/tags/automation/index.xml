@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation on inspiredbits</title>
+    <link>https://inspiredbits.org/tags/automation/</link>
+    <description>Recent content in automation on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Sat, 22 Dec 2018 09:11:10 +0530</lastBuildDate>
+    
+	<atom:link href="https://inspiredbits.org/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Write Custom ESLint Rules for Your Project</title>
+      <link>https://inspiredbits.org/blog/how-to-write-custom-eslint-rules-for-your-project/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/how-to-write-custom-eslint-rules-for-your-project/</guid>
+      <description>While researching for a better (I was using JSHint before) and customizable JavaScript Code linting tool, I found ESLint and ever since have never looked back. ESList is modern, fast, customizable and cross-platform Node.js based static code analyser that looks for bad and problematic patterns in your JavaScript code.
+Things that I love about ESLint tool:
+ Blazing fast scanning provides immediate feedback Ability to add custom rules this is a huge win if you use a framework that is custom or is heavily customized.</description>
+    </item>
+    
+    <item>
+      <title>Automating boilerplate code generation with Go</title>
+      <link>https://inspiredbits.org/blog/fe-code-generator/</link>
+      <pubDate>Tue, 04 Dec 2018 12:42:47 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/fe-code-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang: Print ASCII Art on Console</title>
+      <link>https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/</link>
+      <pubDate>Tue, 27 Nov 2018 13:05:38 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/</guid>
+      <description>Ascii Arts are always fun. Few days back I finished writing a small utility that automates the code generation for the Frontend in my project. It is a command line tool and is meant to be executed on the console (command prompt as its called on Windows). I wanted to print a nice Ascii art whenever it runs. I did some research online and found two options.
+ Either use one of the open source libraries that provides many more option for generating dynamic Ascii art Or write something by my own (quick and dirty)  I came up with a simple solution that should be obvious for most developers.</description>
+    </item>
+    
+  </channel>
+</rss>

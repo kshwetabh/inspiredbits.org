@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on inspiredbits</title>
+    <link>https://inspiredbits.org/tags/github/</link>
+    <description>Recent content in github on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Mon, 24 Dec 2018 09:59:47 +0530</lastBuildDate>
+    
+	<atom:link href="https://inspiredbits.org/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Configure Hugo Site With Github Pages for Custom Domain</title>
+      <link>https://inspiredbits.org/blog/how-to-configure-hugo-site-with-github-pages-for-custom-domain/</link>
+      <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/how-to-configure-hugo-site-with-github-pages-for-custom-domain/</guid>
+      <description>Hosting a static site on Github is pretty easy but there are some obscure configurations needed to get everything setup properly. This post walks through few of those for setting up hugo generated site with Github.
+Hugo&amp;rsquo;s official documentation on how to Host on GitHub has almost all the details that is required to configure Hugo and successfully host your static website on GitHub Pages. I got lost in the custom domain step on which the page does not have much details, except setting up the CNAME file.</description>
+    </item>
+    
+  </channel>
+</rss>

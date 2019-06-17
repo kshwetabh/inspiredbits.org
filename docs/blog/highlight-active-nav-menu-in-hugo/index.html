@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Highlight Active Nav Menu in Hugo</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="referrer" content="no-referrer">
+    <link rel="shortcut icon" href=/images/favicon.png>
+    
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Highlight Active Nav Menu in Hugo"/>
+<meta name="twitter:description" content="TL;DR Here&#39;s a snippet to easily enable current tab highlighting in your hugo theme."/>
+<meta name="twitter:site" content="@@kshwetabh"/>
+
+    <meta property="og:title" content="Highlight Active Nav Menu in Hugo" />
+<meta property="og:description" content="TL;DR Here&#39;s a snippet to easily enable current tab highlighting in your hugo theme." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://inspiredbits.org/blog/highlight-active-nav-menu-in-hugo/" />
+<meta property="article:published_time" content="2018-12-18T17:38:45&#43;05:30"/>
+<meta property="article:modified_time" content="2018-12-18T17:38:45&#43;05:30"/>
+
+    
+<meta itemprop="name" content="Highlight Active Nav Menu in Hugo">
+<meta itemprop="description" content="TL;DR Here&#39;s a snippet to easily enable current tab highlighting in your hugo theme.">
+
+
+<meta itemprop="datePublished" content="2018-12-18T17:38:45&#43;05:30" />
+<meta itemprop="dateModified" content="2018-12-18T17:38:45&#43;05:30" />
+<meta itemprop="wordCount" content="252">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+
+    
+</head><body><header>
+        <div class="header">
+            <div class="company-info">
+                <a href="/" style="text-decoration:none;display:flex;">
+                    <img src="/images/inspiredbits_trans.png" alt="">
+                    <span class="site-name">inspiredbits</span>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    
+                    
+                        
+                        
+                        
+                        <li><a href="/" class="">Home</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/projects" class="">Projects</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/blog" class="active">Blog</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/contactme" class="">Contact Me</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </header><div id="content">
+
+<section>
+  <header class="main">
+    <h1>Highlight Active Nav Menu in Hugo</h1>
+  </header>
+
+  
+  
+
+  <p><strong>TL;DR Here&#39;s a snippet to easily enable current tab highlighting in your hugo theme.</strong></p>
+
+  <p><p>After applying the <a href="https://html5up.net/editorial" target="_blank">Editorial theme</a> to my website, I found that the menu item for the current page is not being highlighted. With some fiddling I was finally able to implement it with Go logic.</p>
+
+<p>If you want to implement this for your theme/website, locate the code that actually renders the site menus. In the Editorial theme, it was present in layouts/partials/nav.html file (please note this might vary for different themes, just search for .Site.Menus.main in your theme files and you should be able to easily locate it).</p>
+
+<p>In the below code snippet notice the lines highlighted (5, 9 and 20). In line #5, I am splitting the URL (eg. <a href="https://inspiredbits.org/post">https://inspiredbits.org/post</a>) to get the page name (eg. post, projects, contactme, etc.). Once I have the page name, I am applying <code>active</code> class to the <code>&lt;li&gt;</code> element if the current menu (returned by a nice inbuilt <code>$.IsMenuCurrent</code> page method provided by hugo) object returns the same current page object. <code>active</code> class then highlights the menu for the current page.</p>
+
+<p>There you have it. A simple Go template implementation to solve the current page tab highlighting issue.</p>
+
+<p><div class="code">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span>&gt;
+      &lt;<span style="color:#f92672">ul</span>&gt;
+          {{ $currentNode := . }}
+          <span style="color:#75715e">&lt;!-- apply active class to the current tab --&gt;</span>
+          {{- $firstUrlElement := print &#34;/&#34; (index (split .URL &#34;/&#34;) 1) -}}
+          {{ range .Site.Menus.main }}              
+              <span style="color:#75715e">&lt;!-- Single level menus --&gt;</span>
+<span style="display:block;width:100%;background-color:#3c3d38">              &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.URL}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{if or ($.IsMenuCurrent &#34;</span><span style="color:#a6e22e">main</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">.)</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">eq</span> <span style="color:#960050;background-color:#1e0010">($</span><span style="color:#a6e22e">firstUrlElement</span><span style="color:#960050;background-color:#1e0010">|</span><span style="color:#a6e22e">lower</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">(.</span><span style="color:#a6e22e">URL</span><span style="color:#960050;background-color:#1e0010">|</span><span style="color:#a6e22e">lower</span><span style="color:#960050;background-color:#1e0010">))</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">active</span><span style="color:#960050;background-color:#1e0010">{{</span><span style="color:#a6e22e">end</span><span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ .Name }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span>          {{ end }}
+      &lt;/<span style="color:#f92672">ul</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+  </code></pre></td></tr></table>
+</div>
+</div>
+</div> <!--code--></p>
+</p>
+</section>
+
+
+        </div><div class="footer">
+    All Rights Reserved | Copyright © 2018-present Kumar Shwetabh | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+</div></body>
+</html>

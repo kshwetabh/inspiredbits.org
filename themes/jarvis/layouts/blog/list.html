@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section>
+  <header class="major page-title">
+    <h2>{{ i18n "allposts" }}</h2>
+  </header>
+  <div class="posts">
+    {{ range (.Paginator).Pages }}
+    <article style="margin:4rem 0px;">
+      <a href="{{ .Permalink }}" class="image">
+        {{ $preview := .Resources.GetMatch "intro" }}
+        {{ with $preview }}
+        {{ $scaled := .Resize "573x" }}
+        <img src="{{ $scaled.RelPermalink }}" alt="" />
+        {{ end }}
+      </a>
+      <a href="{{ .Permalink }}" class="image" style="text-decoration: none;"><h2>{{ .Title }}</h2></a>
+      <p>{{ .Summary }}</p>
+      <p class="list-published-on">
+        Published On: {{ .Date.Format "Jan 2, 2006" }}
+      </p>
+      <ul class="actions">
+        <li>
+          <a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a>
+        </li>
+      </ul>
+    </article>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+</section>
+
+
+<style>
+    .posts h3 {
+      border-bottom: 1px solid #eaecef;
+      /* display: inline-block; */
+    }
+  </style>
+{{ end }}

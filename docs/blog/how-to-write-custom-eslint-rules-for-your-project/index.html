@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>How to Write Custom ESLint Rules for Your Project</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="referrer" content="no-referrer">
+    <link rel="shortcut icon" href=/images/favicon.png>
+    
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Write Custom ESLint Rules for Your Project"/>
+<meta name="twitter:description" content="Summary: This post explains how you can write custom ESLint rules for your project. The example included is a few custom rules for ExtJS framework based code."/>
+<meta name="twitter:site" content="@@kshwetabh"/>
+
+    <meta property="og:title" content="How to Write Custom ESLint Rules for Your Project" />
+<meta property="og:description" content="Summary: This post explains how you can write custom ESLint rules for your project. The example included is a few custom rules for ExtJS framework based code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://inspiredbits.org/blog/how-to-write-custom-eslint-rules-for-your-project/" />
+<meta property="article:published_time" content="2018-12-22T09:11:10&#43;05:30"/>
+<meta property="article:modified_time" content="2018-12-22T09:11:10&#43;05:30"/>
+
+    
+<meta itemprop="name" content="How to Write Custom ESLint Rules for Your Project">
+<meta itemprop="description" content="Summary: This post explains how you can write custom ESLint rules for your project. The example included is a few custom rules for ExtJS framework based code.">
+
+
+<meta itemprop="datePublished" content="2018-12-22T09:11:10&#43;05:30" />
+<meta itemprop="dateModified" content="2018-12-22T09:11:10&#43;05:30" />
+<meta itemprop="wordCount" content="242">
+
+
+
+<meta itemprop="keywords" content="eslint,tools,automation,javascript," />
+
+    
+</head><body><header>
+        <div class="header">
+            <div class="company-info">
+                <a href="/" style="text-decoration:none;display:flex;">
+                    <img src="/images/inspiredbits_trans.png" alt="">
+                    <span class="site-name">inspiredbits</span>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    
+                    
+                        
+                        
+                        
+                        <li><a href="/" class="">Home</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/projects" class="">Projects</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/blog" class="active">Blog</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/contactme" class="">Contact Me</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </header><div id="content">
+
+<section>
+  <header class="main">
+    <h1>How to Write Custom ESLint Rules for Your Project</h1>
+  </header>
+
+  
+  
+
+  <p><strong>Summary: This post explains how you can write custom ESLint rules for your project. The example included is a few custom rules for ExtJS framework based code.</strong></p>
+
+  <p>
+
+<p>While researching for a better (I was using JSHint before) and customizable JavaScript Code linting tool, I found <a href="https://eslint.org" target="_blank">ESLint</a> and ever since have never looked back. ESList is modern, fast, customizable and cross-platform Node.js based static code analyser that looks for bad and problematic patterns in your JavaScript code.</p>
+
+<p>Things that I love about ESLint tool:</p>
+
+<ul>
+<li>Blazing fast scanning provides immediate feedback</li>
+<li>Ability to add custom rules this is a huge win if you use a framework that is custom or is heavily customized.</li>
+<li>Node.js based and thus easier to install on other developer&rsquo;s workstation.</li>
+<li>How easy is to customize the rules and include other standard patterns in your project through its plugin feature (like SonarLint, etc.)</li>
+</ul>
+
+<h3 id="when-do-you-need-to-write-a-custom-rule">When do you need to write a custom rule</h3>
+
+<p>Your project requires some custom rules that is very specific to your project annd is not covered by ESLint&rsquo;s standard set of rules (259 rules currently).</p>
+
+<h3 id="getting-started-with-a-custom-rule">Getting started with a custom rule</h3>
+
+<p>Writing your own rule involves the following steps:
+1.</p>
+
+<p><a href="/images/eslint-astexplorer.png" target="_blank"><img src="/images/eslint-astexplorer.png" alt="Eslint AstExplorer Image" class="responsive-post-image"/></a></p>
+
+<div class="code">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/*
+</span><span style="color:#75715e"> * Enforce using view.up() or view.down() methods instead of the expensive Ext.ComponentQuery.query() method 
+</span><span style="color:#75715e">*/</span>
+<span style="color:#e6db74">&#34;no-hms-ext-componentquery&#34;</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">create</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">context</span>) {
+        <span style="color:#66d9ef">return</span> {
+            <span style="color:#a6e22e">CallExpression</span>(<span style="color:#a6e22e">node</span>) {
+                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span> <span style="color:#f92672">&amp;&amp;</span> 
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">object</span> <span style="color:#f92672">&amp;&amp;</span>
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;Identifier&#34;</span> <span style="color:#f92672">&amp;&amp;</span> 
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;Ext&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">property</span> <span style="color:#f92672">&amp;&amp;</span> 
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;Identifier&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">object</span>.<span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;ComponentQuery&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">property</span> <span style="color:#f92672">&amp;&amp;</span> 
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;Identifier&#34;</span> <span style="color:#f92672">&amp;&amp;</span>
+                        <span style="color:#a6e22e">node</span>.<span style="color:#a6e22e">callee</span>.<span style="color:#a6e22e">property</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;query&#34;</span>) {
+                    <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">report</span>(<span style="color:#a6e22e">node</span>, <span style="color:#e6db74">&#39;Avoid using Ext.ComponentQuery.query method, use view.down or popup.down method instead.&#39;</span>);
+                }
+            }
+        }
+    }
+}
+</code></pre></div>
+</div>   
+</p>
+</section>
+
+
+        </div><div class="footer">
+    All Rights Reserved | Copyright © 2018-present Kumar Shwetabh | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+</div></body>
+</html>

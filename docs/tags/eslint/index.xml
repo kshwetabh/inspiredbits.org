@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eslint on inspiredbits</title>
+    <link>https://inspiredbits.org/tags/eslint/</link>
+    <description>Recent content in eslint on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Sat, 22 Dec 2018 09:11:10 +0530</lastBuildDate>
+    
+	<atom:link href="https://inspiredbits.org/tags/eslint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Write Custom ESLint Rules for Your Project</title>
+      <link>https://inspiredbits.org/blog/how-to-write-custom-eslint-rules-for-your-project/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/how-to-write-custom-eslint-rules-for-your-project/</guid>
+      <description>While researching for a better (I was using JSHint before) and customizable JavaScript Code linting tool, I found ESLint and ever since have never looked back. ESList is modern, fast, customizable and cross-platform Node.js based static code analyser that looks for bad and problematic patterns in your JavaScript code.
+Things that I love about ESLint tool:
+ Blazing fast scanning provides immediate feedback Ability to add custom rules this is a huge win if you use a framework that is custom or is heavily customized.</description>
+    </item>
+    
+  </channel>
+</rss>

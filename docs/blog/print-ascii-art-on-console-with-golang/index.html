@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Golang: Print ASCII Art on Console</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="referrer" content="no-referrer">
+    <link rel="shortcut icon" href=/images/favicon.png>
+    
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Golang: Print ASCII Art on Console"/>
+<meta name="twitter:description" content="TL;DR There&#39;s a simple way to output Ascii Art in your command line program if you don&#39;t need all the bells and whisles that comes with the external specialized go packages."/>
+<meta name="twitter:site" content="@@kshwetabh"/>
+
+    <meta property="og:title" content="Golang: Print ASCII Art on Console" />
+<meta property="og:description" content="TL;DR There&#39;s a simple way to output Ascii Art in your command line program if you don&#39;t need all the bells and whisles that comes with the external specialized go packages." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/" />
+<meta property="article:published_time" content="2018-11-27T13:05:38&#43;05:30"/>
+<meta property="article:modified_time" content="2018-11-27T13:05:38&#43;05:30"/>
+
+    
+<meta itemprop="name" content="Golang: Print ASCII Art on Console">
+<meta itemprop="description" content="TL;DR There&#39;s a simple way to output Ascii Art in your command line program if you don&#39;t need all the bells and whisles that comes with the external specialized go packages.">
+
+
+<meta itemprop="datePublished" content="2018-11-27T13:05:38&#43;05:30" />
+<meta itemprop="dateModified" content="2018-11-27T13:05:38&#43;05:30" />
+<meta itemprop="wordCount" content="434">
+
+
+
+<meta itemprop="keywords" content="go,automation," />
+
+    
+</head><body><header>
+        <div class="header">
+            <div class="company-info">
+                <a href="/" style="text-decoration:none;display:flex;">
+                    <img src="/images/inspiredbits_trans.png" alt="">
+                    <span class="site-name">inspiredbits</span>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    
+                    
+                        
+                        
+                        
+                        <li><a href="/" class="">Home</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/projects" class="">Projects</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/blog" class="active">Blog</a></li>
+                        
+                    
+                        
+                        
+                        
+                        <li><a href="/contactme" class="">Contact Me</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </header><div id="content">
+
+<section>
+  <header class="main">
+    <h1>Golang: Print ASCII Art on Console</h1>
+  </header>
+
+  
+  
+
+  <p><strong>TL;DR There&#39;s a simple way to output Ascii Art in your command line program if you don&#39;t need all the bells and whisles that comes with the external specialized go packages.</strong></p>
+
+  <p>
+
+<p>Ascii Arts are always fun. Few days back I finished writing a small utility that automates the code generation for the Frontend in my project. It is a command line tool and is meant to be executed on the console (command prompt as its called on Windows). I wanted to print a nice Ascii art whenever it runs. I did some research online and found two options.</p>
+
+<ul>
+<li>Either use one of the open source libraries that provides many more option for generating dynamic Ascii art</li>
+<li>Or write something by my own (quick and dirty)</li>
+</ul>
+
+<p>I came up with a simple solution that should be obvious for most developers. Guess what ? Simply print the ascii art as string on console using <code>fmt.Println()</code> 😉
+This meets my simple requirement. The only con is that I can&rsquo;t generate dynamic Ascii Arts.</p>
+
+<h3 id="here-are-the-steps-involved">Here are the steps involved:</h3>
+
+<ul>
+<li>To generate and grab ascii art for your text, visit the below link and generate your ascii art. You have around 314 styles (at the time of this writing) to choose from. Link [<a href="http://patorjk.com/software/taag/#p=testall&f=Graffiti&t=Code%20Generator" target="_blank"> patorjk.com</a>]</li>
+<li>Paste the ascii text in your code and define it as a string. Refer the snippet below. Note that the ascii text might contain &ldquo;<strong>`</strong>&rdquo; character that interfares with go code so just replace those occurances with something like <strong>&lsquo;</strong>. Won&rsquo;t make much of a difference in the output.</li>
+<li>You are good to go. Print it on console 😄</li>
+</ul>
+
+<div class="code">
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">asciiArt</span> <span style="color:#f92672">:=</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">`
+</span></span><span style="color:#e6db74">=============================================================================
+</span><span style="color:#e6db74"> _____           _        _____                           _             
+</span><span style="color:#e6db74">/  __ \         | |      |  __ \                         | |            
+</span><span style="color:#e6db74">| /  \/ ___   __| | ___  | |  \/ ___ _ __   ___ _ __ __ _| |_ ___  _ __ 
+</span><span style="color:#e6db74">| |    / _ \ / _&#39; |/ _ \ | | __ / _ \ &#39;_ \ / _ \ &#39;__/ _&#39; | __/ _ \| &#39;__|
+</span><span style="color:#e6db74">| \__/\ (_) | (_| |  __/ | |_\ \  __/ | | |  __/ | | (_| | || (_) | |   
+</span><span style="color:#e6db74"> \____/\___/ \__,_|\___|  \____/\___|_| |_|\___|_|  \__,_|\__\___/|_|   
+</span><span style="color:#e6db74">																		  
+</span><span style="color:#e6db74">=============================================================================
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">`</span>
+</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">asciiArt</span>)
+
+	<span style="color:#a6e22e">asciiArt</span> =
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">`
+</span></span><span style="color:#e6db74">=============================================================================
+</span><span style="color:#e6db74"> __   __   __   ___     __   ___       ___  __       ___  __   __  
+</span><span style="color:#e6db74">/  &#39; /  \ |  \ |__     / _&#39; |__  |\ | |__  |__)  /\   |  /  \ |__) 
+</span><span style="color:#e6db74">\__, \__/ |__/ |___    \__&gt; |___ | \| |___ |  \ /~~\  |  \__/ |  \ 
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">=============================================================================
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="color:#e6db74">`</span>
+</span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">asciiArt</span>)
+}</code></pre></td></tr></table>
+</div>
+</div>  
+</div>
+
+<p><br />
+<strong>And here&rsquo;s the short and sweet output:</strong></p>
+
+<p><a href="/images/asciiart.jpg"><img src="/images/asciiart.jpg" alt="Eslint AstExplorer Image" class="responsive-post-image"/></a></p>
+</p>
+</section>
+
+
+        </div><div class="footer">
+    All Rights Reserved | Copyright © 2018-present Kumar Shwetabh | Built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+</div></body>
+</html>

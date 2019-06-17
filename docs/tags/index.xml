@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on inspiredbits</title>
+    <link>https://inspiredbits.org/tags/</link>
+    <description>Recent content in Tags on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 17:04:51 +0530</lastBuildDate>
+    
+	<atom:link href="https://inspiredbits.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>binary</title>
+      <link>https://inspiredbits.org/tags/binary/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/binary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://inspiredbits.org/tags/golang/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linode</title>
+      <link>https://inspiredbits.org/tags/linode/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/linode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://inspiredbits.org/tags/linux/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://inspiredbits.org/tags/github/</link>
+      <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://inspiredbits.org/tags/hugo/</link>
+      <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://inspiredbits.org/tags/automation/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eslint</title>
+      <link>https://inspiredbits.org/tags/eslint/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/eslint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://inspiredbits.org/tags/javascript/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://inspiredbits.org/tags/tools/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://inspiredbits.org/tags/go/</link>
+      <pubDate>Tue, 04 Dec 2018 12:42:47 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vuejs</title>
+      <link>https://inspiredbits.org/tags/vuejs/</link>
+      <pubDate>Wed, 17 Oct 2018 14:06:06 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/vuejs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

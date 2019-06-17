@@ -1,0 +1,109 @@
+copyright = "Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License"
+baseurl = "https://inspiredbits.org/"	#config for github pages
+publishDir = "docs"
+title = "inspiredbits"
+theme = "jarvis"
+# Define the number of posts per page
+paginate = 9
+assetDir = "static"
+# Format dates with Go's time formatting
+date_format1 = "Jan 2, 2006" #this config is not working
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
+enableEmoji = true
+googleAnalytics = "UA-33087369-1"
+
+[Social]
+  Twitter 	= "@kshwetabh"
+  Linkedin	= "kumarshwetabh"
+  Github	= "kshwetabh"
+
+[params]	
+	fronttitle = "Hi, I’m "
+	frontname = "Kumar Shwetabh"
+	frontsubline = "WELCOME TO MY PERSONAL WEBSITE"
+	heroimage = "kumshw.jpg"
+	frontintro = "I am a Software Developer with over 13 years of work experience in building small and large scale Enterprise Applications. In addition to working full time with <a href=\"https://www.infor.com/\" target=\"_blank\">Infor</a> as a Principal Frontend Developer, I build websites and automation tools in my spare time. <br/><br/>I am a firm believer in the \"<i>Human Knowledge Belongs To The World\"</i> ideology. I am averse to repeated and mundane tasks so I am always on a lookout to automate them. Love building tools that help making my and other's life easier. Professionally, I have experience in building web technologies (HTML5, JavaScript, CSS3, Scss, etc.), Java and SQL. But I also have strong interest in building tools using Go and Python."
+	learnmore = "Learn More"
+	learnmorelink = "/"
+	logo = "images/inspiredbits_grey.png"
+	logo_small = "images/inspiredbits_trans.png"
+
+[params.contact]
+	title 		= "Get in touch"
+	intro 		= "Wanna talk to me? Please drop me a mail."
+	email 		= "kshwetabh@outlook.com"	
+
+[params.miniposts]
+	enabled 	= true
+	title 		= "My Hobbies"
+
+[[params.miniposts.hobby]]
+	title 		= "Reading"
+	image 		= "images/learn-min.jpg"
+	description = "As they say it, \"A reader lives a thousand lives before he dies. The man who never reads lives only one.\""
+
+[[params.miniposts.hobby]]
+	title 		= "Capturing Moments"
+	image 		= "images/photography-min.jpg"
+	description = "I am a photoholic and love freezing moments in time with my mobile phone or whatever camera I have with me."
+
+[[params.miniposts.hobby]]
+	title 		= "Hacking RaspberryPi"
+	image 		= "/images/circuit-min.jpg"
+	description = "Nothing is as satisfying as playing with this tiny computer. Use for home automation, hosting a bot or website."
+
+[params.nav]
+	title 		= "Menu"
+
+[params.showcase]
+	title		= "My Skillset"
+	icon1		= "fa-diamond"
+	headline1	= "Full Stack Web Developer"
+	intro1		= "I have over a decade of experience in building websites and web applications with technology stacks involving J2EE architecture (ExtJS, JSP, Struts, EJBs), SPAs (VueJS, NodeJS, Golang) and Python web stack. For databases I have worked on MSSql, Oracle, PostgreSql and SQLite."
+	icon2		= "fa-signal"
+	headline2	= "Writing Automation Tools"
+	intro2		= "I have written multiple tools that automates the mundane and repetitive tasks that does not require developer's creativity. FrontEnd Code Generator, Dataportal for Dev Teams, Custom Rules for ESLint, Chatbot with AI capabilities to answer developer questions are a few examples."
+	icon3		= "fa-paper-plane"
+	headline3	= "Building CMS Solutions"
+	intro3		= "Content Management Solutions are very common usecase for small and large scale businesses. I have built and delivered CMS solutions both with existing Open Source solutions like Wordpress, OctoberCMS, etc and custom built to meet specific client needs."
+	icon4		= "fa-rocket"
+	headline4	= "Custom Tool Development with Python, Go, Electron, ElasticSearch"
+	intro4		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+
+[params.projects]
+	title		= "Personal Projects"
+	headline1	= "Dataportal for Dev Team"
+	intro1		= "A blazing fast search enabled Data and artifact repository. Frontend is built in VueJS and backend in Go language. The application features full text search capability with search ranking and all. It utilizes Go's builtin http server package and hence is standalone and cross-platform."
+	url1 		= "projects/dataportal"
+	headline2	= "Chatbot for Dev Team"
+	intro2		= "An intelligent chatbot that answers to developers technical questions. The bot internally uses NLP (wit.ai) to interpret the intent behind questions and provides answers accordingly."
+	url2		= "projects/chatbot"
+	headline3	= "Frontend Code Generator"
+	intro3		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+	url3 		= "projects/woocommerce"
+	headline4	= "Websites for various clients"
+	intro4		= "Built multiple websites for various clients that needed simplicity of static sites with trouble free maintenance."
+	url4		= "projects/variousclientswebsites"
+
+[menu]
+
+[[menu.main]]
+ 	name = "Home"
+	url = "/"
+	weight = 1
+
+[[menu.main]]
+	url 	= "/projects"
+	name 	= "Projects"
+	weight	= 2
+
+[[menu.main]]
+	url 	= "/blog"
+	name 	= "Blog"
+	weight	= 3
+
+[[menu.main]]
+	url 	= "/contactme"
+	name 	= "Contact Me"
+	weight	= 4
