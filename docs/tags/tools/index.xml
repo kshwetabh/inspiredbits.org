@@ -22,14 +22,5 @@ Things that I love about ESLint tool:
  Blazing fast scanning provides immediate feedback Ability to add custom rules this is a huge win if you use a framework that is custom or is heavily customized.</description>
     </item>
     
-    <item>
-      <title>Automating boilerplate code generation with Go</title>
-      <link>https://inspiredbits.org/blog/fe-code-generator/</link>
-      <pubDate>Tue, 04 Dec 2018 12:42:47 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/blog/fe-code-generator/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

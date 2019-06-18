@@ -9,7 +9,8 @@ body {
 body {
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: Roboto, sans-serif;
+  /* font-family: Roboto, sans-serif; */
+  font-family: "Open Sans", sans-serif;
   line-height: 1.8rem;
 }
 
@@ -31,10 +32,11 @@ body {
   box-sizing: border-box;
 }
 .footer {
-  padding: 2.5rem;
+  padding: 1.5rem 0;
   border-top: 1px solid #eaecef;
   text-align: center;
   color: #4e6e8e;
+  max-height: 50px;
 }
 
 .header .company-info {
@@ -371,6 +373,14 @@ header.main h1 {
   margin: 3rem 0;
   line-height: 1.25;
 }
+/* customize default code block */
+.code {
+  overflow-x: auto;
+}
+/* extend dark background to full code block and not just initial device display width */
+.code .highlight > pre {
+  display: inline-block;
+}
 
 @media (max-width: 600px) {
   .hero {
@@ -388,7 +398,7 @@ header.main h1 {
   }
 }
 
-@media (max-width: 419px) {
+@media screen and (max-width: 419px) {
   #content {
     margin: 2rem auto;
   }
@@ -412,5 +422,26 @@ header.main h1 {
   .hero .description,
   .hero h1 {
     margin: 1.2rem auto;
+  }
+
+  .header {
+    padding: 0.5rem 0.5rem;
+    line-height: 2rem;
+  }
+
+  .header .company-info img {
+    height: 1.9rem;
+    min-width: 2rem;
+    margin: 0;
+  }
+
+  .header .company-info .site-name {
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .header .menu li {
+    padding: 0px 2px;
   }
 }

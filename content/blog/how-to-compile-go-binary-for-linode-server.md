@@ -12,6 +12,7 @@ Categories: []
 I use Linode VPS for running my experiments and hosting websites. My primary development machine is Windows 10 and very frequently I need to cross-compile go program binaries to Linux OS that is the primary OS on Linode servers. Instead of doing a google search each time I need to do the cross-compilation, I thought to document the steps here so that I can refer it whenever I need.
 
 Here are the steps that needs to be executed on the Windows Command Prompt:
+<div class="code" style="overflow-x:auto;">
 {{< highlight bash >}}
 
     set GOARCH=amd64    #Target Processor architecture [amd64, 386, arm]
@@ -19,7 +20,9 @@ Here are the steps that needs to be executed on the Windows Command Prompt:
     go build -v         #Start build in verbose mode
 
 {{< / highlight >}} 
-
+</div>
 Flag -v is verbose mode and compiler prints the names of the packages as they are compiled
 
 You can lookup other flags like -a, etc. on [golang.org](https://golang.org/cmd/go/) website.
+
+We can do better. We can make use of Windows batch script so that we won't have to type those individual commands each time on the console.

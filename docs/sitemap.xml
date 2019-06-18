@@ -106,17 +106,6 @@
   </url>
   
   <url>
-    <loc>https://inspiredbits.org/blog/fe-code-generator/</loc>
-    <lastmod>2018-12-04T12:42:47+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/tags/go/</loc>
-    <lastmod>2018-12-04T12:42:47+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://inspiredbits.org/projects/</loc>
     <lastmod>2018-12-02T13:39:27+05:30</lastmod>
     <priority>0</priority>
@@ -130,6 +119,12 @@
   <url>
     <loc>https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/</loc>
     <lastmod>2018-11-27T13:05:38+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/go/</loc>
+    <lastmod>2018-11-27T13:05:38+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

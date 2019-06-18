@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on inspiredbits</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 17:04:51 +0530</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to compile Go program binary to run on your Linux box or Linode Server</title>
+      <link>http://localhost:1313/blog/how-to-compile-go-binary-for-linode-server/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/how-to-compile-go-binary-for-linode-server/</guid>
+      <description>How to compile Go program binary for running on your Linode Server I use Linode VPS for running my experiments and hosting websites. My primary development machine is Windows 10 and very frequently I need to cross-compile go program binaries to Linux OS that is the primary OS on Linode servers. Instead of doing a google search each time I need to do the cross-compilation, I thought to document the steps here so that I can refer it whenever I need.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Google Sheet to Store Visitor Count for Your Static Website</title>
+      <link>http://localhost:1313/blog/how-to-use-google-sheet-to-store-visitor-count-stats-for-your-static-website/</link>
+      <pubDate>Thu, 03 Jan 2019 21:29:44 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/how-to-use-google-sheet-to-store-visitor-count-stats-for-your-static-website/</guid>
+      <description>P.S. This post assumes that the reader is aware of Google Spreadsheets, integration with Google App Scripts, how to publish a Google Script as Web App and has somewhat familiarity with JavaScript. If not then please google for these, there are tons of good quality posts that walks you through these features in detail.
+Recently while working on a static site (of course generated using Hugo), I needed to add Visitor Count information on it.</description>
+    </item>
+    
+    <item>
+      <title>How to Configure Hugo Site With Github Pages for Custom Domain</title>
+      <link>http://localhost:1313/blog/how-to-configure-hugo-site-with-github-pages-for-custom-domain/</link>
+      <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/how-to-configure-hugo-site-with-github-pages-for-custom-domain/</guid>
+      <description>Hosting a static site on Github is pretty easy but there are some obscure configurations needed to get everything setup properly. This post walks through few of those for setting up hugo generated site with Github.
+Hugo&amp;rsquo;s official documentation on how to Host on GitHub has almost all the details that is required to configure Hugo and successfully host your static website on GitHub Pages. I got lost in the custom domain step on which the page does not have much details, except setting up the CNAME file.</description>
+    </item>
+    
+    <item>
+      <title>How to Write Custom ESLint Rules for Your Project</title>
+      <link>http://localhost:1313/blog/how-to-write-custom-eslint-rules-for-your-project/</link>
+      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/how-to-write-custom-eslint-rules-for-your-project/</guid>
+      <description>While researching for a better (I was using JSHint before) and customizable JavaScript Code linting tool, I found ESLint and ever since have never looked back. ESList is modern, fast, customizable and cross-platform Node.js based static code analyser that looks for bad and problematic patterns in your JavaScript code.
+Things that I love about ESLint tool:
+ Blazing fast scanning provides immediate feedback Ability to add custom rules this is a huge win if you use a framework that is custom or is heavily customized.</description>
+    </item>
+    
+    <item>
+      <title>Highlight Active Nav Menu in Hugo</title>
+      <link>http://localhost:1313/blog/highlight-active-nav-menu-in-hugo/</link>
+      <pubDate>Tue, 18 Dec 2018 17:38:45 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/highlight-active-nav-menu-in-hugo/</guid>
+      <description>How to highlight the current tab in Hugo theme</description>
+    </item>
+    
+    <item>
+      <title>Golang: Print ASCII Art on Console</title>
+      <link>http://localhost:1313/blog/print-ascii-art-on-console-with-golang/</link>
+      <pubDate>Tue, 27 Nov 2018 13:05:38 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/print-ascii-art-on-console-with-golang/</guid>
+      <description>Ascii Arts are always fun. Few days back I finished writing a small utility that automates the code generation for the Frontend in my project. It is a command line tool and is meant to be executed on the console (command prompt as its called on Windows). I wanted to print a nice Ascii art whenever it runs. I did some research online and found two options.
+ Either use one of the open source libraries that provides many more option for generating dynamic Ascii art Or write something by my own (quick and dirty)  I came up with a simple solution that should be obvious for most developers.</description>
+    </item>
+    
+    <item>
+      <title>Golang - a Swiss Army Knife</title>
+      <link>http://localhost:1313/blog/golang-a-swiss-army-knife/</link>
+      <pubDate>Sat, 17 Nov 2018 17:28:15 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/golang-a-swiss-army-knife/</guid>
+      <description>My experience with Golang. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Firebase as a backend for hosting a blog</title>
+      <link>http://localhost:1313/blog/firebase-as-backend-for-hosting-a-blog/</link>
+      <pubDate>Wed, 17 Oct 2018 17:29:56 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/firebase-as-backend-for-hosting-a-blog/</guid>
+      <description>My experience with Firebase. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>VueJS, a breeze of fresh air</title>
+      <link>http://localhost:1313/blog/vuejs-fresh-air/</link>
+      <pubDate>Wed, 17 Oct 2018 14:06:06 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/vuejs-fresh-air/</guid>
+      <description>My experience with VueJS. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/css/main.css" />
     
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to compile Go program binary to run on your Linux box or Linode Server"/>
@@ -36,7 +35,7 @@
 
 <meta itemprop="datePublished" content="2019-06-06T17:04:51&#43;05:30" />
 <meta itemprop="dateModified" content="2019-06-06T17:04:51&#43;05:30" />
-<meta itemprop="wordCount" content="151">
+<meta itemprop="wordCount" content="178">
 
 
 
@@ -101,13 +100,16 @@
 <p>I use Linode VPS for running my experiments and hosting websites. My primary development machine is Windows 10 and very frequently I need to cross-compile go program binaries to Linux OS that is the primary OS on Linode servers. Instead of doing a google search each time I need to do the cross-compilation, I thought to document the steps here so that I can refer it whenever I need.</p>
 
 <p>Here are the steps that needs to be executed on the Windows Command Prompt:
+<div class="code" style="overflow-x:auto;">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    set GOARCH<span style="color:#f92672">=</span>amd64    <span style="color:#75715e">#Target Processor architecture [amd64, 386, arm]</span>
     set GOOS<span style="color:#f92672">=</span>linux      <span style="color:#75715e">#Target Operating System where program will run [linux, darwin, windows]</span> 
-    go build -v         <span style="color:#75715e">#Start build in verbose mode</span></code></pre></div></p>
-
-<p>Flag -v is verbose mode and compiler prints the names of the packages as they are compiled</p>
+    go build -v         <span style="color:#75715e">#Start build in verbose mode</span></code></pre></div>
+</div>
+Flag -v is verbose mode and compiler prints the names of the packages as they are compiled</p>
 
 <p>You can lookup other flags like -a, etc. on <a href="https://golang.org/cmd/go/">golang.org</a> website.</p>
+
+<p>We can do better. We can make use of Windows batch script so that we won&rsquo;t have to type those individual commands each time on the console.</p>
 </p>
 </section>
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>binary on inspiredbits</title>
+    <link>http://localhost:1313/tags/binary/</link>
+    <description>Recent content in binary on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 17:04:51 +0530</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/binary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to compile Go program binary to run on your Linux box or Linode Server</title>
+      <link>http://localhost:1313/blog/how-to-compile-go-binary-for-linode-server/</link>
+      <pubDate>Thu, 06 Jun 2019 17:04:51 +0530</pubDate>
+      
+      <guid>http://localhost:1313/blog/how-to-compile-go-binary-for-linode-server/</guid>
+      <description>How to compile Go program binary for running on your Linode Server I use Linode VPS for running my experiments and hosting websites. My primary development machine is Windows 10 and very frequently I need to cross-compile go program binaries to Linux OS that is the primary OS on Linode servers. Instead of doing a google search each time I need to do the cross-compilation, I thought to document the steps here so that I can refer it whenever I need.</description>
+    </item>
+    
+  </channel>
+</rss>

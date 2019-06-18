@@ -6,19 +6,10 @@
     <description>Recent content in go on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Tue, 04 Dec 2018 12:42:47 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 27 Nov 2018 13:05:38 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Automating boilerplate code generation with Go</title>
-      <link>https://inspiredbits.org/blog/fe-code-generator/</link>
-      <pubDate>Tue, 04 Dec 2018 12:42:47 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/blog/fe-code-generator/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Golang: Print ASCII Art on Console</title>

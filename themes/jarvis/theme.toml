@@ -5,14 +5,14 @@ name = "Jarvis"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "http://inspiredbits.org"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Kumar Shwetabh"
+  homepage = "inspiredbits.org"
 
 # If porting an existing theme
 [original]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on inspiredbits</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on inspiredbits</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
+    <lastBuildDate>Sun, 02 Dec 2018 13:39:27 +0530</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Woocommerce - eCommerce for Wordpress</title>
+      <link>http://localhost:1313/projects/woocommerce/</link>
+      <pubDate>Sun, 02 Dec 2018 13:39:27 +0530</pubDate>
+      
+      <guid>http://localhost:1313/projects/woocommerce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Websites for various clients</title>
+      <link>http://localhost:1313/projects/variousclientswebsites/</link>
+      <pubDate>Sun, 25 Nov 2018 20:52:44 +0530</pubDate>
+      
+      <guid>http://localhost:1313/projects/variousclientswebsites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chatbot</title>
+      <link>http://localhost:1313/projects/chatbot/</link>
+      <pubDate>Sun, 25 Nov 2018 13:53:44 +0530</pubDate>
+      
+      <guid>http://localhost:1313/projects/chatbot/</guid>
+      <description>Chatbot</description>
+    </item>
+    
+    <item>
+      <title>Dataportal</title>
+      <link>http://localhost:1313/projects/dataportal/</link>
+      <pubDate>Sat, 06 Oct 2018 13:47:45 +0530</pubDate>
+      
+      <guid>http://localhost:1313/projects/dataportal/</guid>
+      <description>What is Dataportal ? A blazing fast search enabled content and artifact repository. The original target users were software development teams, the application can however be used by any team that needs storing contents and a way to access them fast. Users can store rich-text content, code snippets and different attachments without limitations. The application features full-text-search capability with search ranking (meaning more frequently accessed contents are ranked higher in the subsequent searches).</description>
+    </item>
+    
+  </channel>
+</rss>
