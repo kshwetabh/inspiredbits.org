@@ -6,10 +6,20 @@
     <description>Recent content on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 17:04:51 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 11:47:45 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Access Hugo Dev Server From Any Device On The Same Network</title>
+      <link>https://inspiredbits.org/blog/access-hugo-dev-server-from-network-computers/</link>
+      <pubDate>Tue, 18 Jun 2019 11:47:45 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/access-hugo-dev-server-from-network-computers/</guid>
+      <description>So while developing themes or testing different layouts we might need to test the website on multiple devices and different form-factors. Running command Hugo server by default is not accessible over the network on different devices like your smartphone or tablet.
+In order to access the website from other devices we need to bind the server to its network interface IP (instead of the loopback IP i.e. 127.0.0.1) using the &amp;ndash;bind argument.</description>
+    </item>
     
     <item>
       <title>How to compile Go program binary to run on your Linux box or Linode Server</title>

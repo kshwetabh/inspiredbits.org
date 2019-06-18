@@ -6,10 +6,37 @@
     <description>Recent content in Tags on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 17:04:51 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 11:47:45 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo</title>
+      <link>https://inspiredbits.org/tags/hugo/</link>
+      <pubDate>Tue, 18 Jun 2019 11:47:45 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static site generator</title>
+      <link>https://inspiredbits.org/tags/static-site-generator/</link>
+      <pubDate>Tue, 18 Jun 2019 11:47:45 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/static-site-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static website</title>
+      <link>https://inspiredbits.org/tags/static-website/</link>
+      <pubDate>Tue, 18 Jun 2019 11:47:45 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/static-website/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>binary</title>
@@ -53,15 +80,6 @@
       <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
       
       <guid>https://inspiredbits.org/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://inspiredbits.org/tags/hugo/</link>
-      <pubDate>Mon, 24 Dec 2018 09:59:47 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/tags/hugo/</guid>
       <description></description>
     </item>
     

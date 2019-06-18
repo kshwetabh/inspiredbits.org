@@ -3,20 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://inspiredbits.org/blog/access-hugo-dev-server-from-network-computers/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://inspiredbits.org/blog/</loc>
-    <lastmod>2019-06-06T17:04:51+05:30</lastmod>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/hugo/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/static-site-generator/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/static-website/</loc>
+    <lastmod>2019-06-18T11:47:45+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://inspiredbits.org/blog/how-to-compile-go-binary-for-linode-server/</loc>
     <lastmod>2019-06-06T17:04:51+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/tags/</loc>
-    <lastmod>2019-06-06T17:04:51+05:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -27,12 +56,6 @@
   
   <url>
     <loc>https://inspiredbits.org/tags/golang/</loc>
-    <lastmod>2019-06-06T17:04:51+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/</loc>
     <lastmod>2019-06-06T17:04:51+05:30</lastmod>
     <priority>0</priority>
   </url>
@@ -61,12 +84,6 @@
   
   <url>
     <loc>https://inspiredbits.org/tags/github/</loc>
-    <lastmod>2018-12-24T09:59:47+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/tags/hugo/</loc>
     <lastmod>2018-12-24T09:59:47+05:30</lastmod>
     <priority>0</priority>
   </url>

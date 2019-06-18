@@ -10,7 +10,7 @@ P.S. This post assumes that the reader is aware of Google Spreadsheets, integrat
 
 Recently while working on a static site (of course generated using Hugo), I needed to add Visitor Count information on it. It looks something like this:
 
-<img src="/images/visitorcount.png" alt="Visitor Count Image" class="responsive-post-image" style="border: 1px solid #cdcdcd;"/>
+<img src="/images/visitorcount.png" alt="Visitor Count Image" class="responsive-post-image" style="border:1px solid #cdcdcd;width:100%;max-width:300px;"/>
 
 I also wanted to keep full control on how I manage the count, so did not want to use a '*specialized*' 3rd party site or library just for this. I am somewhat comfortable with Google Scripts as I have fiddled with it in past, so I though why not use Google Spreadsheet to store my data. I just had to expose (in Google Script world they call it publishing the script) a URL that simply increments the count by 1 each time the URL is accessed.
 

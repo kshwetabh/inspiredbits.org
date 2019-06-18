@@ -380,6 +380,7 @@ header.main h1 {
 /* extend dark background to full code block and not just initial device display width */
 .code .highlight > pre {
   display: inline-block;
+  padding: 1rem;
 }
 
 @media (max-width: 600px) {
