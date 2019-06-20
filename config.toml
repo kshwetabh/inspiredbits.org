@@ -18,7 +18,11 @@ googleAnalytics = "UA-33087369-1"
   Linkedin	= "kumarshwetabh"
   Github	= "kshwetabh"
 
-[params]	
+[params]
+	# used for twitter and other social cards meta tag generation
+	description = "This is my personal website. My technical skillset includes building web applications and websites using technologies like (HTML5, JavaScript, CSS3, VueJs, Svelte3, Scss, etc.), Go, Python, Java and SQL. I have a special interest in putting the user's needs first before anything while designing a solution."
+	images = ["https://pbs.twimg.com/profile_images/1480004813/me_400x400.JPG"]
+	# used for home page content generation
 	fronttitle = "Hi, I’m "
 	frontname = "Kumar Shwetabh"
 	frontsubline = "WELCOME TO MY PERSONAL WEBSITE"

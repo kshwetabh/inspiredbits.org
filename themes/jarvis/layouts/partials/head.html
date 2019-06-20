@@ -1,19 +1,15 @@
 <head>
-    <title>{{ .Title }}</title>
-    {{ if .Params.private}}
-    <meta name="robots" content="noindex,nofollow" />
-    {{ end }}
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Title }}</title>
     <link rel="shortcut icon" href=/images/favicon.png>
     {{ partial "security-meta.html" . }}
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <!-- minify css files -->
-    {{- $css := resources.Get "css/main.css" }}
+    <!-- {{- $css := resources.Get "css/main.css" }}
     {{- $styles := $css | resources.Minify | resources.Fingerprint "sha512"}}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}"/>
-    <!-- <link rel="stylesheet" href="/css/main.css"/> -->
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}"/> -->
+    <link rel="stylesheet" href="/css/main.css"/>
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet">
@@ -21,4 +17,5 @@
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/google_news.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>

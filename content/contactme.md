@@ -51,7 +51,7 @@ draft: false
                         <option value="">- Category -</option>
                         <option value="query">Query</option>
                         <option value="suggestion">Suggestion</option>
-                        <option value="consult">Consult</option>
+                        <option value="consult">Other</option>
                     </select>
                 </div>
                 <div class="field">
