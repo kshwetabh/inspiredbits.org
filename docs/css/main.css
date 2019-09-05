@@ -191,6 +191,9 @@ section .item h3 {
   display: flex;
   align-items: center;
 }
+.section-headline h3 {
+  font-weight: 500;
+}
 
 .button {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
