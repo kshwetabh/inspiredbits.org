@@ -5,6 +5,7 @@ description: "VueJS is a modern framework that is arguably the easiest to pick u
                 I go through my experiences of picking up this framework and building a simple application."
 tags: [javascript, vuejs]
 banner: "circuit.jpg"
+draft: true
 ---
 
 My experience with VueJS.

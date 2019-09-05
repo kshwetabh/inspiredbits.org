@@ -3,7 +3,7 @@ title: "Golang - a Swiss Army Knife"
 date: 2018-11-17T17:28:15+05:30
 description: "Golang is a modern framework that is arguably the easiest to pick up and has the least learning curve.
                 I go through my experiences of picking up this framework and building a simple application."
-draft: false
+draft: true
 tags: [go]
 ---
 

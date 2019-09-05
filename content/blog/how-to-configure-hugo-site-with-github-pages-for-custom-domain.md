@@ -15,7 +15,8 @@ I struggled quite a bit with the **baseURL** config. The official Hugo page inst
 This might be obvious to others, but I struggled and thought to put it out to the world to save others from going through this.
 
 <div class="code">
-{{< highlight toml "linenos=table,hl_lines=1 2">}}
+{{< highlight toml>}}
+
 baseurl = "https://inspiredbits.org/"	#config for github pages
 publishDir = "docs"                     #config for github pages
 
@@ -31,7 +32,7 @@ DefaultContentLanguage = "en"
 This file should have the domain name entry without any **http**, **https** or **www** protocols or prefixes.
 
 <div class="code">
-{{< highlight toml "linenos=table,hl_lines=1 2">}}
+{{< highlight toml>}}
 inspiredbits.org
 {{< / highlight >}} 
 

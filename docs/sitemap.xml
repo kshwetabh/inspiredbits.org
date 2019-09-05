@@ -155,27 +155,6 @@
   </url>
   
   <url>
-    <loc>https://inspiredbits.org/blog/golang-a-swiss-army-knife/</loc>
-    <lastmod>2018-11-17T17:28:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/blog/firebase-as-backend-for-hosting-a-blog/</loc>
-    <lastmod>2018-10-17T17:29:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/blog/vuejs-fresh-air/</loc>
-    <lastmod>2018-10-17T14:06:06+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/tags/vuejs/</loc>
-    <lastmod>2018-10-17T14:06:06+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://inspiredbits.org/projects/dataportal/</loc>
     <lastmod>2018-10-06T13:47:45+05:30</lastmod>
   </url>
