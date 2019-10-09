@@ -1,7 +1,6 @@
 ---
 title: "Highlight Active Nav Menu in Hugo"
 date: 2018-12-18T17:38:45+05:30
-draft: false
 summary: "How to highlight the current tab in Hugo theme"
 description: TL;DR Here's a snippet to easily enable current tab highlighting in your hugo theme.
 tags: [hugo]

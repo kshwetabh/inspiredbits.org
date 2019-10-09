@@ -6,10 +6,22 @@
     <description>Recent content on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Tue, 18 Jun 2019 11:47:45 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 08:57:22 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Configure Your Angular App for Indian Currency Formatting</title>
+      <link>https://inspiredbits.org/blog/configure-your-angular-app-for-indian-currency-formatting/</link>
+      <pubDate>Wed, 09 Oct 2019 08:57:22 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/configure-your-angular-app-for-indian-currency-formatting/</guid>
+      <description>You can configure the Indian locale application wide by registering the en-IN locale using registerLocaleData() in the app.module.ts. You can also enable this only for a particular module by registering the locale in the specific module file.
+In app.module.ts: import { registerLocaleData } from &amp;#39;@angular/common&amp;#39;; import localeIn from &amp;#39;@angular/common/locales/en-IN&amp;#39;; registerLocaleData(localeIn); 
+And in your template (html) file, apply the currency pipe with following arguments:
+In home.component.html: {{ amount | currency :&amp;#39;INR&amp;#39; : &amp;#39;symbol&amp;#39; : &amp;#39;1.</description>
+    </item>
     
     <item>
       <title>Access Hugo Dev Server From Any Device On The Same Network</title>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Tue, 18 Jun 2019 11:47:45 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 08:57:22 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>angular</title>
+      <link>https://inspiredbits.org/tags/angular/</link>
+      <pubDate>Wed, 09 Oct 2019 08:57:22 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://inspiredbits.org/tags/javascript/</link>
+      <pubDate>Wed, 09 Oct 2019 08:57:22 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typescript</title>
+      <link>https://inspiredbits.org/tags/typescript/</link>
+      <pubDate>Wed, 09 Oct 2019 08:57:22 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/tags/typescript/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hugo</title>
@@ -98,15 +125,6 @@
       <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
       
       <guid>https://inspiredbits.org/tags/eslint/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://inspiredbits.org/tags/javascript/</link>
-      <pubDate>Sat, 22 Dec 2018 09:11:10 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/tags/javascript/</guid>
       <description></description>
     </item>
     

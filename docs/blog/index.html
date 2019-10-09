@@ -28,10 +28,9 @@
 
 <meta property="og:image" content="https://pbs.twimg.com/profile_images/1480004813/me_400x400.JPG" />
 
-<meta property="og:updated_time" content="2019-06-18T11:47:45&#43;05:30"/>
+<meta property="og:updated_time" content="2019-10-09T08:57:22+05:30" />
 
-    
-<meta itemprop="name" content="Blogs">
+    <meta itemprop="name" content="Blogs">
 <meta itemprop="description" content="This is my personal website. My technical skillset includes building web applications and websites using technologies like (HTML5, JavaScript, CSS3, VueJs, Svelte3, Scss, etc.), Go, Python, Java and SQL. I have a special interest in putting the user&#39;s needs first before anything while designing a solution.">
 
 
@@ -80,6 +79,26 @@ if (!doNotTrack) {
     <h2>Blogs</h2>
   </header>
   <div class="posts">
+    
+    <article style="margin:4rem 0px;">
+      <a href="https://inspiredbits.org/blog/configure-your-angular-app-for-indian-currency-formatting/" class="image">
+        
+        
+      </a>
+      <a href="https://inspiredbits.org/blog/configure-your-angular-app-for-indian-currency-formatting/" class="image" style="text-decoration: none;"><h2>Configure Your Angular App for Indian Currency Formatting</h2></a>
+      <p>You can configure the Indian locale application wide by registering the en-IN locale using registerLocaleData() in the app.module.ts. You can also enable this only for a particular module by registering the locale in the specific module file.
+In app.module.ts: import { registerLocaleData } from &#39;@angular/common&#39;; import localeIn from &#39;@angular/common/locales/en-IN&#39;; registerLocaleData(localeIn); 
+And in your template (html) file, apply the currency pipe with following arguments:
+In home.component.html: {{ amount | currency :&#39;INR&#39; : &#39;symbol&#39; : &#39;1.</p>
+      <p class="list-published-on">
+        Published On: Oct 9, 2019
+      </p>
+      <ul class="actions">
+        <li>
+          <a href="https://inspiredbits.org/blog/configure-your-angular-app-for-indian-currency-formatting/" class="button">Read</a>
+        </li>
+      </ul>
+    </article>
     
     <article style="margin:4rem 0px;">
       <a href="https://inspiredbits.org/blog/access-hugo-dev-server-from-network-computers/" class="image">
@@ -208,6 +227,7 @@ Things that I love about ESLint tool:
     
   </div>
   
+
 
 </section>
 
