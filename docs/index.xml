@@ -83,15 +83,6 @@ Things that I love about ESLint tool:
     </item>
     
     <item>
-      <title>Woocommerce - eCommerce for Wordpress</title>
-      <link>https://inspiredbits.org/projects/woocommerce/</link>
-      <pubDate>Sun, 02 Dec 2018 13:39:27 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/projects/woocommerce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Golang: Print ASCII Art on Console</title>
       <link>https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/</link>
       <pubDate>Tue, 27 Nov 2018 13:05:38 +0530</pubDate>
@@ -99,24 +90,6 @@ Things that I love about ESLint tool:
       <guid>https://inspiredbits.org/blog/print-ascii-art-on-console-with-golang/</guid>
       <description>Ascii Arts are always fun. Few days back I finished writing a small utility that automates the code generation for the Frontend in my project. It is a command line tool and is meant to be executed on the console (command prompt as its called on Windows). I wanted to print a nice Ascii art whenever it runs. I did some research online and found two options.
  Either use one of the open source libraries that provides many more option for generating dynamic Ascii art Or write something by my own (quick and dirty)  I came up with a simple solution that should be obvious for most developers.</description>
-    </item>
-    
-    <item>
-      <title>Websites for various clients</title>
-      <link>https://inspiredbits.org/projects/variousclientswebsites/</link>
-      <pubDate>Sun, 25 Nov 2018 20:52:44 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/projects/variousclientswebsites/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chatbot</title>
-      <link>https://inspiredbits.org/projects/chatbot/</link>
-      <pubDate>Sun, 25 Nov 2018 13:53:44 +0530</pubDate>
-      
-      <guid>https://inspiredbits.org/projects/chatbot/</guid>
-      <description>Chatbot</description>
     </item>
     
     <item>
