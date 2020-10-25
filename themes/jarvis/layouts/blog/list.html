@@ -5,7 +5,7 @@
   </header>
   <div class="posts">
     {{ range (.Paginator).Pages }}
-    <article style="margin:4rem 0px;">
+    <article>
       <a href="{{ .Permalink }}" class="image">
         {{ $preview := .Resources.GetMatch "intro" }}
         {{ with $preview }}

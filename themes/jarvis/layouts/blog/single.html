@@ -3,6 +3,7 @@
 <section>
   <header class="main">
     <h1>{{ .Title }}</h1>
+    <small class="list-published-on">Published On: {{ .Date.Format "Jan 2, 2006" }}</small>
   </header>
 
   {{ $preview := .Resources.GetMatch "intro" }}

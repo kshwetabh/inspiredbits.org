@@ -143,6 +143,13 @@ p a code {
   line-height: 1.3;
   text-align: center;
 }
+.posts article {
+  margin: 4rem 0px;
+}
+
+.posts article:nth-child(1) {
+  margin-top: 2rem;
+}
 
 section .item h3 {
   display: inline-block;
@@ -371,9 +378,12 @@ ul.actions {
   text-transform: uppercase;
   color: #adadad;
 }
+header.main {
+  margin: 1rem 0;
+}
 header.main h1 {
   font-size: 2.2rem;
-  margin: 3rem 0;
+  
   line-height: 1.25;
 }
 /* customize default code block */
