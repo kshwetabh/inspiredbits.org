@@ -6,10 +6,19 @@
     <description>Recent content on inspiredbits</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License</copyright>
-    <lastBuildDate>Wed, 09 Oct 2019 08:57:22 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2020 11:47:45 +0530</lastBuildDate>
     
 	<atom:link href="https://inspiredbits.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Remove Caprover, docker swarm and related artifacts from your linux machine</title>
+      <link>https://inspiredbits.org/blog/remove-caprover-docker-swarm/</link>
+      <pubDate>Sun, 25 Oct 2020 11:47:45 +0530</pubDate>
+      
+      <guid>https://inspiredbits.org/blog/remove-caprover-docker-swarm/</guid>
+      <description>In my effort to learn CI &amp;amp; CD and after failing badly to install Dokku on my raspberry-pi (they don&amp;rsquo;t provide precompiled binaries yet and I am not an expert in compiling linux binaries, do did not every think about that), I discovered Caprover. Its a nice little PAAS ecosystem that builds upon Docker and provides a handy dashboard (and cli tools as well if you prefer terminal) to configure, customize the application and related setups.</description>
+    </item>
     
     <item>
       <title>Configure Your Angular App for Indian Currency Formatting</title>

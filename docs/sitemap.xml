@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://inspiredbits.org/tags/angular/</loc>
-    <lastmod>2019-10-09T08:57:22+05:30</lastmod>
+    <loc>https://inspiredbits.org/blog/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://inspiredbits.org/blog/</loc>
+    <loc>https://inspiredbits.org/tags/caprover/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/ci-and-cd/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/blog/remove-caprover-docker-swarm/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/</loc>
+    <lastmod>2020-10-25T11:47:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inspiredbits.org/tags/angular/</loc>
     <lastmod>2019-10-09T08:57:22+05:30</lastmod>
   </url>
   
@@ -18,17 +43,7 @@
   </url>
   
   <url>
-    <loc>https://inspiredbits.org/</loc>
-    <lastmod>2019-10-09T08:57:22+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://inspiredbits.org/tags/javascript/</loc>
-    <lastmod>2019-10-09T08:57:22+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inspiredbits.org/tags/</loc>
     <lastmod>2019-10-09T08:57:22+05:30</lastmod>
   </url>
   
