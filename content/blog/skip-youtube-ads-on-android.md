@@ -3,6 +3,7 @@ title: "How to skip those pesky Youtube adverts on your android phone."
 date: 2021-02-02T09:59:47+05:30
 description: "If those youtube advertisements and interruptions have annoyed the hell out of you, you can automate skipping them using this android automation."
 tags: [android, youtube, diy]
+draft: true
 ---
 
 I will be upfront about my skills to be frugal. I do not want to spend any money just to watch Youtube without interruptions and advertisements. As it happens, by the end of last year, I was so fedup with the adverts that I was almost about to subscribe. But the frugal person in me said to stop and see if there's a (free) way around it.
